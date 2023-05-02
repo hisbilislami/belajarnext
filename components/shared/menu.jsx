@@ -1,18 +1,20 @@
+import Link from "next/link";
+
 export default function MenuComponent({ additionalInformation }) {
   return (
     <div>
-      <ul class="flex">
-        <li class="ml-2 p-2">
-          <a href="/">Home</a>
+      <ul className="flex">
+        <li className="ml-2 p-2">
+          <Link href="/">Home</Link>
         </li>
-        <li class="ml-2 p-2">
-          <a href="/profile">Profile</a>
+        <li className="ml-2 p-2">
+          <Link href="/profile">Profile</Link>
         </li>
-        <li class="ml-2 p-2">
-          <a href="/about">About</a>
+        <li className="ml-2 p-2">
+          <Link href="/about">About</Link>
         </li>
-        <li class="ml-2 p-2">
-          <a href="/contact">Contact</a>
+        <li className="ml-2 p-2">
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
     </div>
